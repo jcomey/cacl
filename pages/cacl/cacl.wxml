@@ -1,0 +1,51 @@
+<view class='my-flex'>
+  <view class='inline-block'>
+    <label class='label'>交强</label>
+    <input class="my-input" type='digit' value='{{jq}}' bindinput='getjqNum'>{{jq}}</input>
+  </view>
+  <view class='inline-block'>
+    <label class='label'>费率%</label>
+    <input class="my-input" type='digit' value='{{jqtax}}' bindinput='getjqtax'></input>
+  </view>
+
+
+</view>
+
+<view class='my-flex'>
+  <view class='inline-block'>
+    <label class='label'>车船</label>
+    <input class="my-input" type='digit' value='{{cc}}' bindinput='getcc'></input>
+  </view>
+  <view class='inline-block'>
+    <label class='label'>费率%</label>
+    <input class="my-input" type='digit' value='{{cctax}}' bindinput='getcctax'></input>
+  </view>
+
+
+</view>
+
+<view class='my-flex'>
+  <view class='inline-block'>
+    <label class='label'>商业</label>
+    <input class="my-input" type='digit' value='{{sy}}'  bindinput='getsy'></input>
+  </view>
+  <view class='inline-block'>
+    <label class='label'>费率%</label>
+    <input class="my-input" type='digit' value='{{sytax}}' bindinput='getsytax'></input>
+  </view>
+
+
+</view>
+<!-- <view class='my-flex'><input type='button' value='清空' bindtap='clear'></input><input type='button' value='计算' bindtap='cacl'></input></view> -->
+<view class='cacl'>
+  <view class='res'>总保费： <label class="{{showview?'show':'hide'}}">{{jq}}+{{cc}}+{{sy}}={{total}}  </label> </view>
+
+  <view class='ress green'>
+    <label>净费分离：<text class="{{showview?'show':'hide'}}">{{jffljq}}+{{jfflcc}}+{{jfflsy}}={{jffl}}</text></label>
+    <label>佣金：<text class="{{showview?'show':'hide'}}">{{yj}}</text></label>
+  </view>
+  <view class='ress red'>
+    <label>净费不分：<text class="{{showview?'show':'hide'}}">{{jfbfjq}}+{{jfbfcc}}+{{jfbfsy}}={{jingfen}} </text></label>
+    <label>佣金：<text class="{{showview?'show':'hide'}}">{{yongjin}}</text></label>
+  </view>
+</view>

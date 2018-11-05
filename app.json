@@ -1,0 +1,14 @@
+{
+  "pages":[
+      "pages/cacl/cacl",
+    "pages/index/index",
+    "pages/logs/logs"
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "车险净费通",
+    "navigationBarTextStyle":"black"
+  }
+}
