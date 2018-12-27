@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/cart/cart",
       "pages/cacl/cacl",
     "pages/index/index",
     "pages/logs/logs"

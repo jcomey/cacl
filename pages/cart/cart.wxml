@@ -1,0 +1,6 @@
+<view wx:for="{{listor}}" wx:key="{{pic}}" class='base'>
+<view><button data-index="{{index}}" bindtap='min'>-</button></view>
+<view style='flex:1;text-align:center'>{{item.num}}</view>
+<view style='flex:1;text-align:center'>{{item.pic}}</view>
+<view><button data-index="{{index}}" bindtap='add'>+</button></view>
+</view>
